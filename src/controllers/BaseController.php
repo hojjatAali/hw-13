@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Controllers;
+namespace Src\controllers;
 
 use Src\Model\Repository\AdminRepository;
 use Src\Model\Repository\DoctorRepository;

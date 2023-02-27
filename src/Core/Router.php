@@ -23,12 +23,13 @@ class Router{
 
         $routeMethod = strtolower($method);
 
-        $route =explode($route,"?")[0];
+        $route =explode("?",$route)[0];
+
 
         $findedRoute = self::$$routeMethod[$route];
 
-
         $controller = new $findedRoute[0];
+
 
         $action = $findedRoute[1];
 

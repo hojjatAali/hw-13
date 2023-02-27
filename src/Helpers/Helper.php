@@ -9,14 +9,15 @@ function view($name){
 
 function login(array $user){
 
-    $_SESSION[$user['email']] = $user['name'];
-    setcookie('email', $user['email']);
+
+    $_SESSION[$user['token']] = $user['token'];
+    setcookie('token', $user['token']);
 
 }
 
 function logout(){
-    $_SESSION[$_COOKIE['email']] = null;
-    $_COOKIE['email'] = null;
+    $_SESSION[$_COOKIE['token']] = null;
+    $_COOKIE['token'] = null;
 }
 
 function redirect($name){

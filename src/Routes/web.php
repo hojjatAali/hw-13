@@ -1,18 +1,15 @@
 <?php
-
-use Src\controler\HomeControler;
-use Src\controler\LoginControler;
-use Src\controler\RegisterControler;
-use Src\Controllers\AdminController;
-use Src\Controllers\DoctorController;
-use Src\Controllers\LoginController;
-use Src\Controllers\RegisterController;
+use Src\controllers\AdminController;
+use Src\controllers\DoctorController;
+use Src\controllers\HomeController;
+use Src\controllers\LoginController;
+use Src\controllers\RegisterController;
 use Src\Core\Router;
 
 
-Router::get('/login', [LoginControler::class, 'create']);
-Router::get('/', [HomeControler::class, 'index']);
+Router::get('/login', [LoginController::class, 'create']);
 
+Router::get('/', [HomeController::class, 'index']);
 
 Router::post('/login', [LoginController::class, 'store']);
 Router::post('/logout', [LoginController::class, 'destroy']);
@@ -27,6 +24,7 @@ Router::post('/Show',[AdminController::class,'Show']);
 Router::post('/create',[AdminController::class,'create']);
 Router::post('/list',[AdminController::class,'confirm']);
 Router::post('/edit',[DoctorController::class,'edit']);
+
 
 
 

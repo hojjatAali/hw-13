@@ -37,13 +37,13 @@ require_once '../public/header.php';
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <div class="form-outline">
-                                    <input name="firstName" type="text" id="form3Example1" class="form-control" />
+                                    <input name="first_name" type="text" id="form3Example1" class="form-control" />
                                     <label class="form-label" for="form3Example1">First name</label>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="form-outline">
-                                    <input name="LastName" type="text" id="form3Example2" class="form-control" />
+                                    <input name="last_name" type="text" id="form3Example2" class="form-control" />
                                     <label class="form-label" for="form3Example2">Last name</label>
                                 </div>
                             </div>
@@ -51,14 +51,14 @@ require_once '../public/header.php';
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <input name="Email" type="email" id="form3Example3" class="form-control" />
+                            <input name="email" type="email" id="form3Example3" class="form-control" />
                             <label class="form-label" for="form3Example3">Email address</label>
                         </div>
-                        <select name="Type" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <select name="type" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                             <option selected>Please select type of user</option>
-                            <option value="1">Doctor</option>
-                            <option value="2">Admin</option>
-                            <option value="3">Normal user</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="admin">Admin</option>
+                            <option value="normal user">Normal user</option>
                         </select>
 
                         <!-- Password input -->

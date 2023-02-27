@@ -11,9 +11,9 @@ class LoginRepository extends MySqlBaseRepository
 
 
 
-    public function finedByEmail($token)
+    public function finedBytoken($token)
     {
-        return $this->queryBuilder::table('user')->select()->where('email', $email)->first();
+        return $this->queryBuilder::table('user')->select()->where('token', $token)->first();
 
     }
 

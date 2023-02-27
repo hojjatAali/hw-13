@@ -1,14 +1,13 @@
 {
-    "name": "cw/cw",
-    "autoload": {
-        "psr-4": {
-            "Src\\": "src"
-        },
-        "files" : [
-            "src/Helpers/Helper.php"
-        ]
+  "name": "hw/hw",
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src"
     },
-  "require": {
-    "ext-pdo": "*"
+    "files" : [
+      "src/Helpers/Helper.php"
+    ]
   }
+
+
 }
